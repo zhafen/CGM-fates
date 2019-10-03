@@ -14,7 +14,7 @@
 		<div style="background-color:black; position:absolute; top:0; bottom:0; left:0; right:0;" id='loader'></div>
 
 		<div id="ContentContainer" > 
-			<div id="sleep" onclick="hideSleep()" style="display:none; z-index: 6;">
+			<div id="sleep" onclick="hideSleep()" style="display:none">
 				<div style="font-size: x-large; margin-top:15%"> 
 					Firefly has gone to sleep after spending too long between rendering frames, click to wake it back up!
 				</div>
@@ -22,7 +22,7 @@
 					Hint: if this is happening frequently it might be because Firefly is being overtaxed!
 				</div>
 			</div>
-			<div id="splash" onclick="hideSplash()" style="z-index: 5;">
+			<div id="splash" onclick="hideSplash()">
 				<div id="splashdiv1">The Fates of the CGM Visualized </div>
 				<div id="splashdiv2">Hafen, Faucher-Gigu&egrave;re, Angl&eacute;s-Alc&aacute;zar, et al. 2019</div>
 				<div id="splashdiv2">Developed using Firefly</div>
@@ -49,16 +49,16 @@
 			</div>
 
 
-			<div class="UIcontainer" style="visibility:hidden"></div>
-			
-			<div id="colorbar_container"></div>
+			<div class="UIcontainer" style="visibility:hidden"> 
+
+			</div>
 
 			<div id="WebGLContainer" ></div>
 
 		</div>
 
 <!-- three.js resources -->		
-		<script src="src/resources/three.min.r102.js"></script>
+		<script src="src/resources/three.min.js"></script>
 		<script src="src/resources/Detector.js"></script>
 		<script src="src/resources/TrackballControls.js"></script>
 		<script src="src/resources/three-fly-controls.js"></script>
@@ -85,7 +85,7 @@
 		<script src="src/resources/d3.v4.10.2.min.js"></script>
 
 		<!-- tween -->
-		<script src="src/resources/Tween.js"></script>
+        <script src="src/resources/Tween.js"></script>
 
 		<!-- the main attraction -->
 
@@ -102,6 +102,8 @@
 		<script src="src/js/renderAll.js"></script>
 		<script src="src/js/init.js"></script>
 		<script src="src/js/runTweens.js"></script>
+
+
 
 	</body>
 
