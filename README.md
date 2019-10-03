@@ -5,11 +5,12 @@ This repository contains [online interactive visualizations of the CGM](https://
 When you first start the visualization you can select a simulation, redshift, and type of visualization you would like to view. The simulations available were created as part of the [FIRE project](https://fire.northwestern.edu). Two redshifts are available per simulation: `lowz` and `highz` corresponding to z=0.25 and z=2 respectively. The tags at the end indicate whether or you will see a "snapshot" or "pathlines" visualization.
 
 *Snapshot of the CGM Visualizations:*
-These visualizations display ~1e5 particles at the specified redshift and sampled out to within the virial radius, as described in Hafen et al. 2019. Each particle is colored according to their origin:
+These visualizations display ~1e5 particles at the specified redshift and sampled out to within the virial radius, as described in Hafen et al. 2019. Each particle is colored according to their fate, listed below.
 
 *Pathlines of CGM Gas Visualizations:*
-These visualizations display the full pathlines, over the course of the entire simulation, for 400 particles. Each particle was in the CGM of the specified simulation at the specified redshift. Each particle is colored according to how it arrived in the CGM (i.e. its origin). These visualizations are the 3D equivalent of a figure like Figure 4 in Hafen et al. (2019). We display the pathlines of 100 particles per origin, of which there are four:
+These visualizations display the full pathlines, over the course of the entire simulation, for 400 particles. Each particle was in the CGM of the specified simulation at the specified redshift. Each particle is colored according to where it will go after it leaves the CGM (i.e. its fate). These visualizations are the 3D equivalent of a figure such as Figure 4 in Hafen et al. (2019). We display the pathlines of 100 particles per fate.
 
+*Visualized Fates*
 1. Accreted onto Central (blue) - gas that will next accrete onto the central galaxy.
 2. Accreted onto Satellite (purple) - gas that will next accrete onto a satellite galaxy.
 3. Ejected into IGM (red) - gas that will next be ejected into the IGM.
